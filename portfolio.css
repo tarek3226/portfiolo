@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jacques+Francois&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    font-family: 'Google Sans';
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    grid-area: h;
+    background-color: #eae202b9;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+header ul {
+    list-style: none;
+    display: flex; 
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+header ul li {
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 12px;
+}
+header ul li:hover {
+    background-color: darkgreen;
+    
+    color: white;
+}
+footer {
+    grid-area: f;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+aside {
+    grid-area: s;
+    background-color: beige;
+    padding: 10px;
+}
+aside ul {
+    list-style: none;
+}
+main {
+    grid-area: m;
+    background-color: rgba(194, 194, 158, 0.605);
+    padding: 10px;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+    'h h'
+    's m'
+    'f f';
+    height: 100vh;
+
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+
+}
+
+main div {
+    background-color: #333;
+    color: white;
+    width: fit-content;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+main div:hover {
+    background-color: black;
+}
+main {
+    display: flex;
+   
+    flex-wrap: wrap;
+    align-content: start;
+    gap: 15px;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 20px 40px;
+}
+/* 
+Mahmoud = 1
+Mohamed = 1
+Yassin = 1
+Youssef = 1
+Adam = 1
+Ahmed = 1
+*/
